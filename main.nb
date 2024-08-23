@@ -1,0 +1,69 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1615,         61]
+NotebookOptionsPosition[      1129,         44]
+NotebookOutlinePosition[      1535,         60]
+CellTagsIndexPosition[      1492,         57]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+37005 Fundamental of Derivative Security Pricing - Spring 2024
+Group Assignment Part I \
+\>", "Title",
+ CellChangeTimes->{{3.933385382116726*^9, 
+  3.933385437471842*^9}},ExpressionUUID->"1d85f200-de5f-c444-8036-\
+cef806b82574"],
+
+Cell["\<\
+Group ID: 1
+Group Members:
+- Hayoung Lee
+- Quoc Thai Tran
+- Alexis Cullet
+- Ziqi Zhou\
+\>", "Subtitle",
+ CellChangeTimes->{{3.9333854077184505`*^9, 3.933385408090254*^9}, {
+  3.933385440436657*^9, 
+  3.9333854728343887`*^9}},ExpressionUUID->"84c4ae13-18ae-8642-91fc-\
+e731f4bfbe47"]
+}, Open  ]]
+},
+WindowSize->{1440, 777.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"5f98e18a-f77f-5a44-b930-c838f0b8ee57"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 238, 6, 160, "Title",ExpressionUUID->"1d85f200-de5f-c444-8036-cef806b82574"],
+Cell[821, 30, 292, 11, 213, "Subtitle",ExpressionUUID->"84c4ae13-18ae-8642-91fc-e731f4bfbe47"]
+}, Open  ]]
+}
+]
+*)
+
