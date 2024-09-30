@@ -1,0 +1,88 @@
+%% AMS-LaTeX Created with the Wolfram Language : www.wolfram.com
+
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphics, setspace}
+
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
+
+\newcounter{mathematicapage}
+\begin{document}
+
+\title{37005 Fundamental of Derivative Security Pricing - Spring 2024\\
+Group Assignment Part I }
+\author{Group ID: 1\\
+Group Members:\\
+- Hayoung Lee\\
+- Quoc Thai Tran\\
+- Alexis Cullet\\
+- Ziqi Zhou}
+\date{}
+\maketitle
+
+\section*{Task 3}
+
+\(\text{Payoff} \text{at} T: \max \left(S(0)e^{\text{gT}},S(0)^{\alpha }S(T)^{1-\alpha }\right)\\
+=S(0)e^{\text{gT}}\mathbb{I}_{\left\{S(0)e^{\text{gT}}>S(0)^{\alpha }S(T)^{1-\alpha }\right\}}+S(0)^{\alpha }S(T)^{1-\alpha }\mathbb{I}_{\left\{S(0)e^{\text{gT}}<S(0)^{\alpha
+}S(T)^{1-\alpha }\right\}}\\
+=S(0)e^{\text{gT}}\mathbb{I}_{\left\{S(0)e^{\frac{\text{gT}}{1-\alpha }}>S(T)\right\}}+S(0)^{\alpha }S(T)^{1-\alpha }\mathbb{I}_{\left\{S(0)e^{\frac{\text{gT}}{1-\alpha
+}}<S(T)\right\}}\\
+V=B(0,T)\mathbb{E}_{\beta }\left[S(0)e^{\text{gT}}\mathbb{I}_{\left\{S(0)e^{\frac{\text{gT}}{1-\alpha }}>S(T)\right\}}+S(0)^{\alpha }S(T)^{1-\alpha
+}\mathbb{I}_{\left\{S(0)e^{\frac{\text{gT}}{1-\alpha }}<S(T)\right\}}\right]\\
+=B(0,T)\left[S(0)e^{\text{gT}}P_{\beta }\left\{S(0)e^{\frac{\text{gT}}{1-\alpha }}>S(T)\right\}+S(0)^{\alpha }\mathbb{E}_{\beta }\left[S(T)^{1-\alpha
+}\mathbb{I}_{\left\{S(0)e^{\frac{\text{gT}}{1-\alpha }}<S(T)\right\}}\right]\right]\\
+\\
+\text{Consider} \text{the} \text{dynamics} \text{of} \text{the} S(t)\\
+dS(t)=S(t)\left((r(t)-q(t))dt+\sigma (t)dW_{\beta }(t)\right)\\
+\Rightarrow \ln (S(T))=\ln (S(0))+\int _0^Tr(t)dt-\int _0^Tq(t)dt-\frac{1}{2}\int _0^T\sigma ^2(t)dt+\int _0^T\sigma (t)dW_{\beta }(t)\\
+=\ln (S(0))-\ln (B(0,T))+\ln (D(0,T))-\frac{1}{2}\sum _{i=1}^N \int _{T_{i-1}}^{T_i}\sigma _i{}^2(t)dt+\sum _{i=1}^N \int _{T_{i-1}}^{T_i}\sigma
+_i(t)dW_{\beta }(t) \left(\text{where} T_N=T\right)\\
+=\ln \left(S(0)\frac{D(0,T)}{B(0,T)}\right)-\frac{1}{2}\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)+\sum _{i=1}^N \sigma _i\left(W_{\beta
+}\left(T_i\right)-W_{\beta }\left(T_{i-1}\right)\right)\\
+\Rightarrow \ln (S(T))\sim N_{\beta }\left(\ln \left(S(0)\frac{D(0,T)}{B(0,T)}\right)-\frac{1}{2}\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right),\sum
+_{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)\right)\\
+\Rightarrow P_{\beta }\left\{S(0)e^{\frac{\text{gT}}{1-\alpha }}>S(T)\right\}=\Phi \left(\frac{\ln \left(S(0)e^{\frac{\text{gT}}{1-\alpha }}\right)-\left(\ln
+\left(S(0)\frac{D(0,T)}{B(0,T)}\right)-\frac{1}{2}\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)\right)}{\sqrt{\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)}}\right)\\
+\\
+\text{Let} Z(t,T)=\frac{S(T)^{1-\alpha }}{S(0)^{1-\alpha }}C \text{is} R/N \text{derivative} \text{to} \text{change} \text{from} P_{\beta } \text{to}
+P_Q\\
+\Rightarrow \frac{S(T)^{1-\alpha }}{S(0)^{1-\alpha }}C=\text{Exp}\left[-\frac{(1-\alpha )^2}{2}\int _0^T\sigma ^2(t)dt+(1-\alpha )\int _0^T\sigma
+(t)dW_{\beta }(t)\right]\\
+\Rightarrow \ln \frac{1}{C}=(1-\alpha )\left[\ln \left(\frac{D(0,T)}{B(0,T)}\right)\right]-\frac{(1-\alpha )}{2}\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)+\frac{(1-\alpha
+)^2}{2}\int _0^T\sigma ^2(t)dt\\
+=(1-\alpha )\left[\ln \left(\frac{D(0,T)}{B(0,T)}\right)\right]+\frac{(1-\alpha )^2-(1-\alpha )}{2}\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)\\
+\Rightarrow \frac{1}{C}=\left(\frac{D(0,T)}{B(0,T)}\right)^{(1-\alpha )}\text{Exp}\left[\frac{\alpha ^2-\alpha }{2}\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)\right]\\
+\\
+\\
+\\
+\mathbb{E}_{\beta }\left[S(T)^{1-\alpha }\mathbb{I}_{\left\{S(0)e^{\frac{\text{gT}}{1-\alpha }}<S(T)\right\}}\right]\\
+=\mathbb{E}_Q\left[S(T)^{1-\alpha }\mathbb{I}_{\left\{S(0)e^{\frac{\text{gT}}{1-\alpha }}<S(T)\right\}}\frac{1}{\frac{S(T)^{1-\alpha }}{S(0)^{1-\alpha
+}}C}\right]\\
+=\frac{S(0)^{1-\alpha }}{C}P_Q\left\{S(0)e^{\frac{\text{gT}}{1-\alpha }}<S(T)\right\}\\
+=\left(S(0)\frac{D(0,T)}{B(0,T)}\right)^{(1-\alpha )}\text{Exp}\left[\frac{\alpha ^2-\alpha }{2}\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)\right]P_Q\left\{S(0)e^{\frac{\text{gT}}{1-\alpha
+}}<S(T)\right\}\\
+\\
+\text{Under} \text{Girsanov} \text{Theorem}\\
+dW_Q(t)=dW_{\beta }(t)-(1-\alpha )\sigma (t)dt\\
+\Rightarrow \ln (S(T))=\ln \left(S(0)\frac{D(0,T)}{B(0,T)}\right)-\frac{1}{2}\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)+\sum _{i=1}^N
+\int _{T_{i-1}}^{T_i}\sigma _i(t)dW_{\beta }(t)\\
+=\ln \left(S(0)\frac{D(0,T)}{B(0,T)}\right)-\frac{1}{2}\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)+\sum _{i=1}^N \int _{T_{i-1}}^{T_i}\sigma
+_i(t)\left[dW_Q(t)+(1-\alpha )\sigma _i(t)dt\right]\\
+=\ln \left(S(0)\frac{D(0,T)}{B(0,T)}\right)-\frac{1}{2}\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)+(1-\alpha )\sum _{i=1}^N \int _{T_{i-1}}^{T_i}\sigma
+_i{}^2(t)dt+\sum _{i=1}^N \int _{T_{i-1}}^{T_i}\sigma _i(t)dW_Q(t)\\
+=\ln \left(S(0)\frac{D(0,T)}{B(0,T)}\right)+\left(\frac{1}{2}-\alpha \right)\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)+\sum _{i=1}^N
+\sigma _i(t)\left(W_Q\left(T_i\right)-W_Q\left(T_{i-1}\right)\right)\\
+\Rightarrow \ln (S(T))\sim N_Q\left(\ln \left(S(0)\frac{D(0,T)}{B(0,T)}\right)+\left(\frac{1}{2}-\alpha \right)\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right),\sum
+_{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)\right)\\
+P_Q\left\{S(0)e^{\frac{\text{gT}}{1-\alpha }}<S(T)\right\}=\Phi \left(\frac{\ln \left(S(0)\frac{D(0,T)}{B(0,T)}\right)+\left(\frac{1}{2}-\alpha \right)\sum
+_{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)-\ln \left(S(0)e^{\frac{\text{gT}}{1-\alpha }}\right)}{\sqrt{\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)}}\right)\\
+\\
+\text{Then}\\
+V=B(0,T)\left[S(0)e^{\text{gT}}\Phi \left(h_1\right)+S(0)\left(\frac{D(0,T)}{B(0,T)}\right)^{(1-\alpha )}\text{Exp}\left[\frac{\alpha ^2-\alpha }{2}\sum
+_{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)\right]\Phi \left(h_2\right)\right]\\
+h_1=\frac{\ln \left(S(0)e^{\frac{\text{gT}}{1-\alpha }}\right)-\left(\ln \left(S(0)\frac{D(0,T)}{B(0,T)}\right)-\frac{1}{2}\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)\right)}{\sqrt{\sum
+_{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)}}\\
+h_2=\frac{\ln \left(S(0)\frac{D(0,T)}{B(0,T)}\right)+\left(\frac{1}{2}-\alpha \right)\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)-\ln \left(S(0)e^{\frac{\text{gT}}{1-\alpha
+}}\right)}{\sqrt{\sum _{i=1}^N \sigma _i{}^2(t)\left(T_i-T_{i-1}\right)}}\)
+
+\end{document}
