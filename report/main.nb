@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     39371,       1338]
-NotebookOptionsPosition[     38631,       1316]
-NotebookOutlinePosition[     39066,       1333]
-CellTagsIndexPosition[     39023,       1330]
+NotebookDataLength[     39346,       1337]
+NotebookOptionsPosition[     38606,       1315]
+NotebookOutlinePosition[     39041,       1332]
+CellTagsIndexPosition[     38998,       1329]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1174,17 +1174,16 @@ Cell[BoxData[{
 "\[IndentingNewLine]", 
  RowBox[{"V", "=", 
   RowBox[{"B", 
+   RowBox[{"(", 
+    RowBox[{"0", ",", "T"}], ")"}], "S", 
    RowBox[{
-    RowBox[{"(", 
-     RowBox[{"0", ",", "T"}], ")"}], "[", 
+    RowBox[{"(", "0", ")"}], "[", 
     RowBox[{
-     RowBox[{"S", 
-      RowBox[{"(", "0", ")"}], 
+     RowBox[{
       SuperscriptBox["\[ExponentialE]", "gT"], "\[CapitalPhi]", 
       RowBox[{"(", 
        SubscriptBox["h", "1"], ")"}]}], "+", 
-     RowBox[{"S", 
-      RowBox[{"(", "0", ")"}], 
+     RowBox[{
       SuperscriptBox[
        RowBox[{"(", 
         FractionBox[
@@ -1302,14 +1301,14 @@ Cell[BoxData[{
         SubscriptBox["T", 
          RowBox[{"i", "-", "1"}]]}], ")"}]}]}]]]}]}], "Text",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGCQAmIQHeD44nhDyFtHBe+WEyD6x/J5F0C0yZ0LD0D0kUsx
-T0F0z53Tz0C0TMWjVyB6zoxlb0D0AfU5v8D6ONREGoG0z5GzUiD6TfNvBRDd
-8kZYH0RP+L7LCESHeH10BtELpq13B9Fnql95g+gaB/YMEK1y/kkOiJYo6ikE
-0QUzlpWCaA2DtWC6oEVsCojuef1xPoiOCRJZCqI9juuvAtEKyh/Wgegcj4RN
-ILqDYc02sPkvn5wBu+8CN2sTyPzHlmwg2mXKfz4QvSP5oDKItiidqQ6in5hm
-aIFoh32meiA6Y6mgDYheYLLbBUSb/PnnAzbn+ak4EM3x9Vc5iJa5/WYZiD6z
-pHUFiN6j3X8KRL95aH0BRG8I3rdgPihcyg4tBNE2jttWHAWFX077VhA9w+7X
-bhCtczfmIIgGAPVs2bs=
+1:eJwd0FsoQwEcBvCTwkopWRJ7mCYTMmkrsrSTlWV70OyBWnJJnYeVUUPx4LLh
+YcXD0tSyKZslt8SSaZmmrTly8mrKZW5zVvYgGmHfefj3e/p/fX1lfYPagSyC
+IEozB9vJl/CkLkkK1eYI/FpfYaA0xtzC0JX+EVpj509QMHafgA67h4UnYkea
+++NV8KcyakIXJZCd+RZCM1sogYufR/VQ15Zqga6lnVZIjyfUcEKRS8Hyy7gB
+Fg9bh6DR7jHByrotTqO5yAatbykn1Gv5bqgKSzagUPS+DQ2qnj04T2z6uPzX
+OM31Y/Kyp5H/0JgDlba/fHjYHxTBBtOyGMZlVBVUBGS1kHIXyKFL6ldC6c+v
+hst5jnZD3kd6FAquWQ+k1yxeeFy9EIXsXRMDdzsCLid2GTldhXLS5z3Dfoa5
+A2hvTvthzY0+CCOSiKW3M0nuh7pm4T/czuIl
   "],ExpressionUUID->"afa18fe6-86e3-d940-a6d3-9c1df8f6b4ab"]
 }, Open  ]]
 }, Open  ]]
@@ -1337,7 +1336,7 @@ Cell[580, 22, 238, 6, 264, "Title",ExpressionUUID->"1d85f200-de5f-c444-8036-cef8
 Cell[821, 30, 292, 11, 254, "Subtitle",ExpressionUUID->"84c4ae13-18ae-8642-91fc-e731f4bfbe47"],
 Cell[CellGroupData[{
 Cell[1138, 45, 153, 3, 81, "Section",ExpressionUUID->"dce39e05-2b54-c84d-a35e-f7016776bb3e"],
-Cell[1294, 50, 37309, 1262, 2328, "Text",ExpressionUUID->"afa18fe6-86e3-d940-a6d3-9c1df8f6b4ab"]
+Cell[1294, 50, 37284, 1261, 2328, "Text",ExpressionUUID->"afa18fe6-86e3-d940-a6d3-9c1df8f6b4ab"]
 }, Open  ]]
 }, Open  ]]
 }
